@@ -250,6 +250,7 @@
     padding-bottom: 26px;
     margin-bottom: 26px;
     position: relative;
+    @extend  %title-font;
     &::after{
       content: '';
       position: absolute;
@@ -274,6 +275,7 @@
     padding-bottom: 25px;
     margin-bottom: 25px;
     position: relative;
+    @extend  %title-font;
     &::after{
       content: '';
       position: absolute;
@@ -329,6 +331,7 @@
     padding-bottom: 19px;
     margin-bottom: 19px;
     position: relative;
+    @extend  %title-font;
     &::after{
       content: '';
       bottom: 0;
@@ -353,6 +356,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   &__title{
+    @extend  %title-font;
     max-width: 730px;
     color: $title;
     font-size: 60px;
@@ -372,6 +376,48 @@
   }
   &__text{
     max-width: 540px;
+  }
+}
+.works-path{
+  padding-top: 80px;
+  padding-bottom: 30px;
+  &__title{
+    @extend  %title-font;
+    text-align: center;
+    color: $title;
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 51px;
+  }
+  &__items-box{
+    display: flex;
+    border-bottom: 2px solid rgba(#363838, .7);
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $title;
+
+    }
+  }
+  &__item{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__item-title{
+    margin-left: 13px;
+    color: $title;
+    @extend  %title-font;
+  }
+  &__item-text{
+    margin-top: 13px;
   }
 }
 
