@@ -9,8 +9,8 @@ $title: #363838;
 }
 
 @function max($numbers...) {
-  @return m#{a}x(#{numbers});
+ @return m#{a}x(#{$numbers});
 }
 @function min($numbers...) {
-  @return m#{i}n(#{$numbers})
+ @return m#{i}n(#{$numbers});
 }
