@@ -73,25 +73,7 @@
     margin-bottom: 16px;
     max-width: 475px;
   }
-  &__info-email{
-    font-weight: 600;
-    color: $title;
-    font-size: 14px;
-    margin-bottom: 22px;
-    padding-left: 30px;
-    display: inline-block;
-    position: relative;
-    &::before{
-      content:'';
-      background-image: url(../images/envelope.svg);
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 0;
-      width: 16px;
-      height: 12px;
-      top: 7px;
-    }
-  }
+
   &__form{
     display: flex;
   }
@@ -228,6 +210,8 @@
 .breadcrumbs{
   background: rgba(#DFDFDF, .5);
   padding: 13px 14px;
+  position: relative;
+  z-index: 999;
   &__item::after{
     content: '/';
     margin-left: -4px;
@@ -705,4 +689,9 @@
   &__item{
     margin: 0 auto;
   }
+}
+
+.map{
+  margin-top: -53px;
+  margin-bottom: 50px;
 }
